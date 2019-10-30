@@ -11,6 +11,7 @@ class UsuarioPersonalizadoAdmin(UserAdmin):
     add_form = UsuarioPersonalizadoCreationForm
     add_form = UsuarioPersonalizadoChangeForm
     model = UsuarioPersonalizado
+    list_display = ['email', 'username', 'idade', 'is_staff',]
 
 admin.site.register(UsuarioPersonalizado, UsuarioPersonalizadoAdmin)
 

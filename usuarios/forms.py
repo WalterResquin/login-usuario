@@ -7,6 +7,7 @@ class UsuarioPersonalizadoCreationForm(UserCreationForm):
     class Meta(UserCreationForm.Meta):
         model = UsuarioPersonalizado
         fields = UserCreationForm.Meta.fields + ('idade',)
+        
 
 
 class UsuarioPersonalizadoChangeForm(UserChangeForm):
